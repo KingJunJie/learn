@@ -19,7 +19,7 @@
         <mysql-connector-java.version>5.1.24</mysql-connector-java.version>
         <spring.version>4.3.20.RELEASE</spring.version>
         <cglib.version>2.2.2</cglib.version>
-        <log4j.version>2.9.1</log4j.version>
+        <log4j.version>2.13.3</log4j.version>
         <slf4j.version>1.7.21</slf4j.version>
         <jsoup.version>1.10.1</jsoup.version>
     </properties>
