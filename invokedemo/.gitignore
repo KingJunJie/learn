@@ -1,0 +1,17 @@
+/target/
+/out/
+.classpath
+.project
+/.settings/
+.metadata
+.recommenders/
+*.iml
+*.ipr
+*.iws
+.idea/
+*.class
+.settings
+*.log
+*.kotlin_module
+.idea
+

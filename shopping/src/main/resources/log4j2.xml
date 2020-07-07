@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="OFF" monitorInterval="1800">
+
+    <properties>
+        <property name="LOG_HOME">${pom.log.dir}</property>
+        <property name="PROJECT_NAME">${pom.log.name}</property>
+        <property name="ROOT_LEVEL">${pom.log.root-level}</property>
+    </properties>
+
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%highlight{%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level] %thread %class.%L - %msg%n}{FATAL=Bright Red, ERROR=Bright Magenta, WARN=Bright Yellow, INFO=Bright Green, DEBUG=Black, TRACE=Bright White}" />
+        </Console>
+
+        <RollingFile name="errorLog" append="true"
+                     fileName="${LOG_HOME}/${PROJECT_NAME}.error.log"
+                     filePattern="${LOG_HOME}/${PROJECT_NAME}.%d{yyyy-MM-dd}-%i.error.log"
+        >
+            <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout
+                    pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level] %thread %logger{15}.%line - %msg%n"/>
+            <!-- 不分割了-->
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingFile>
+
+        <RollingFile name="infoLog"
+                     fileName="${LOG_HOME}/${PROJECT_NAME}.info.log"
+                     filePattern="${LOG_HOME}/${PROJECT_NAME}.%d{yyyy-MM-dd}-%i.info.log"
+        >
+            <ThresholdFilter level="${ROOT_LEVEL}" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout
+                    pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level] %thread %logger{15}.%line - %msg%n"/>
+            <!-- 不分割了-->
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+        <!--3rdparty Loggers-->
+        <asyncLogger name="org.apache" level="ERROR"></asyncLogger>
+        <asyncLogger name="io.netty" level="ERROR"></asyncLogger>
+        <asyncLogger name="org.springframework" level="WARN"></asyncLogger>
+        <asyncLogger name="com.alibaba.druid" level="WARN"></asyncLogger>
+        <asyncLogger name="org.apache.ibatis" level="ERROR"></asyncLogger>
+        <asyncLogger name="java.sql" level="ERROR"></asyncLogger>
+        <asyncLogger name="org.mybatis.spring" level="INFO"></asyncLogger>
+        <asyncLogger name="org.mortbay" level="INFO"></asyncLogger>
+        <asyncLogger name="com.alibaba.dubbo" level="${ROOT_LEVEL}"></asyncLogger>
+        <asyncLogger name="org.springframework.test" level="${ROOT_LEVEL}"></asyncLogger>
+
+        <asyncRoot level="${ROOT_LEVEL}" includeLocation="true">
+            <appender-ref ref="infoLog" />
+            <appender-ref ref="errorLog" />
+            <appender-ref ref="Console"/>
+        </asyncRoot>
+    </Loggers>
+</Configuration>

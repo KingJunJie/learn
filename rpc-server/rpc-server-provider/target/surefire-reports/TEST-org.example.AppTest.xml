@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.AppTest" time="0.036" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\E\bzcloud\devops\rpc-server\rpc-server-provider\target\test-classes;D:\E\bzcloud\devops\rpc-server\rpc-server-provider\target\classes;D:\Util\mavenJar\junit\junit\4.11\junit-4.11.jar;D:\Util\mavenJar\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\E\bzcloud\devops\rpc-server\rpc-server-api\target\rpc-server-api-1.0-SNAPSHOT.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="D:\JDK\JDK8\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\ADMINI~1\AppData\Local\Temp\surefire315583012274394956\surefirebooter1543372015112625078.jar C:\Users\Administrator\AppData\Local\Temp\surefire315583012274394956 2020-03-24T12-53-18_002-jvmRun1 surefire3527762484418655359tmp surefire_12032310086063500356tmp"/>
+    <property name="surefire.test.class.path" value="D:\E\bzcloud\devops\rpc-server\rpc-server-provider\target\test-classes;D:\E\bzcloud\devops\rpc-server\rpc-server-provider\target\classes;D:\Util\mavenJar\junit\junit\4.11\junit-4.11.jar;D:\Util\mavenJar\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\E\bzcloud\devops\rpc-server\rpc-server-api\target\rpc-server-api-1.0-SNAPSHOT.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="D:\JDK\JDK8\jre"/>
+    <property name="basedir" value="D:\E\bzcloud\devops\rpc-server\rpc-server-provider"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\ADMINI~1\AppData\Local\Temp\surefire315583012274394956\surefirebooter1543372015112625078.jar"/>
+    <property name="sun.boot.class.path" value="D:\JDK\JDK8\jre\lib\resources.jar;D:\JDK\JDK8\jre\lib\rt.jar;D:\JDK\JDK8\jre\lib\sunrsasign.jar;D:\JDK\JDK8\jre\lib\jsse.jar;D:\JDK\JDK8\jre\lib\jce.jar;D:\JDK\JDK8\jre\lib\charsets.jar;D:\JDK\JDK8\jre\lib\jfr.jar;D:\JDK\JDK8\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="D:\JDK\JDK8\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\Util\mavenJar"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="user.dir" value="D:\E\bzcloud\devops\rpc-server\rpc-server-provider"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="idea.version2019.3.3" value="true"/>
+    <property name="java.library.path" value="D:\JDK\JDK8\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Util\CRT\;D:\JDK\JDK8\bin;D:\Util\Maven\apache-maven-3.3.9\bin;D:\Util\erlang\erl10.0.1\bin;D:\Util\RabbitMQ\rabbitmq_server-3.8.1\sbin;D:\Util\MySQL\mysql-5.7.28-winx64\bin;D:\Util\Redis\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Local\BypassRuntm;D:\Util\Fiddler;D:\Util\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.ext.dirs" value="D:\JDK\JDK8\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.repo.local" value="D:\Util\mavenJar"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="org.example.AppTest" time="0.001"/>
+</testsuite>

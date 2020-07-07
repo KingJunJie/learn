@@ -1,0 +1,9 @@
+package com.king.demo.mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.king.demo.pojo.User;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UserMapper extends BaseMapper<User> {
+}

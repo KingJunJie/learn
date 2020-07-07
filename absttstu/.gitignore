@@ -1,0 +1,15 @@
+/target/
+/out/
+.classpath
+.project
+/.settings/
+.metadata
+.recommenders/
+*.iml
+*.ipr
+*.iws
+.idea/
+*.class
+.settings
+*.log
+
