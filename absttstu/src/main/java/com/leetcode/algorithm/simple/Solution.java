@@ -20,7 +20,8 @@ public class Solution {
     public static void main(String[] args) {
         int[] nums = {1, 2, 6, 8, 10};
         int target = 10;
-        new Solution().twoSum02(nums, target);
+        int[] ints = new Solution().twoSum02(nums, target);
+        System.out.println(ints[0] + "," + ints[1]);
     }
 
     public int[] twoSum01(int[] nums, int target) {
@@ -46,7 +47,7 @@ public class Solution {
         Map<Integer,Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length ; i++) {
             if(map.containsKey(target - nums[i])){
-                return new int[]{i,map.get(nums[i])};
+                return new int[]{i,map.get(target - nums[i])};
             }
             map.put(nums[i],i);
         }
